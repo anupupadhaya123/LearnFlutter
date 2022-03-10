@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       themeMode:ThemeMode.light ,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple
+        primarySwatch: Colors.deepPurple,
+        
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      initialRoute: "/home",
+      initialRoute: "/login",
       routes: {
         "/" : (context)=> new LoginPage(), //This is object "new" is optional in dart
         "/home" : (context)=>HomePage(),
