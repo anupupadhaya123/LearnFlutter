@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../configuration/config.dart';
+
 class MyDrawer extends StatelessWidget {
 
   @override
@@ -10,6 +12,7 @@ class MyDrawer extends StatelessWidget {
       child: Container(
         color: Colors.deepPurple,
         child: ListView(
+          
           // padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
@@ -26,6 +29,21 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
+            //List View From Config
+          //   Column(   
+          //   children: 
+          //     drawerItem.map((element) => Row(
+          //       children: [
+          //         Icon(element['Icon'], color: Colors.white,size: 25,),
+          //         SizedBox(
+          //           width: 15,
+          //         ),
+          //         Text(element['title'],style: TextStyle(color: Colors.white, fontSize: 20),),
+          //       ],
+          //     )).toList()
+            
+          // ),
+
             ListTile(
               leading: Icon(CupertinoIcons.home, color: Colors.white, size: 30,),
               title: Text("Home", 
