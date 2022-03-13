@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter/pages/homepage.dart';
 import 'package:learn_flutter/pages/login_page.dart';
 import 'package:learn_flutter/utils/routes.dart';
+import 'package:learn_flutter/widgets/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,14 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: HomePage(),
       themeMode:ThemeMode.light ,
-      theme: ThemeData( 
-        primarySwatch: Colors.deepPurple,
-        
-      ),
+      theme: MyTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      darkTheme: MyTheme.darkTheme(context),
       initialRoute: MyRoutes.homeRoute,
       routes: {
         "/" : (context)=> new LoginPage(), //This is object "new" is optional in dart
