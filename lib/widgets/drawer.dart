@@ -27,6 +27,7 @@ class MyDrawer extends StatelessWidget {
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(image),
                 ),
+                // currentAccountPicture: Image.network(image)
               ),
             ),
             //List View From Config
